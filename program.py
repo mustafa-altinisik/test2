@@ -30,3 +30,6 @@ class Deneme_Uygulamasi(App):
         buton.bind()
 
         return GridLayout
+
+#exit(0) means a clean exit without any errors / problems
+#exit0 hatasiz temiz bir cikis anlamina gelir.
