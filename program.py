@@ -13,7 +13,6 @@ from kivy.uix.slider import Slider
 from kivy.clock import Clock
 from kivy.graphics import Color, Rectangle
 
-import RPi.GPIO as GPIO
 #Birkac modul cektik.
 
 def deneme(obj):
@@ -21,13 +20,13 @@ def deneme(obj):
         print(u"Deneme başarılı")
 
 
-class Deneme_Uygulamasi(App)
-    def yapı(self):
-        with layout.canvas.before:
+class Deneme_Uygulamasi(App):
+    def yapi(self):
+        with GridLayout.canvas.before:
             Color(.2, .2, .2, 1)
             self.rect =Rectangle(size=(800,600), pos=layout.pos)
 
         buton = Button(text="Dene")
         buton.bind()
 
-        return layout
+        return GridLayout
