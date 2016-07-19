@@ -1,3 +1,5 @@
+# -*- coding: utf-8 -*-
+
 from kivy.app import App
 
 from kivy.uix.scatter import Scatter
@@ -6,13 +8,14 @@ from kivy.uix.floatlayout import FloatLayout
 from kivy.uix.textinput import TextInput
 from kivy.uix.boxlayout import BoxLayout
 
+
 class TutorialApp(App):
     def build(self):
         b = BoxLayout()
         t = TextInput(font_size=10)
         f = FloatLayout()
         s = Scatter()
-        l = Label(text="Merhaba\nEfendim",
+        l = Label(text = u"Merhaba\nEfendümüğşşöşçöı",
                   font_size=50)
         f.add_widget(s)
         s.add_widget(l)
@@ -21,5 +24,5 @@ class TutorialApp(App):
         s.add_widget(t)
         return b
 
-if __name__=="__main__":
+if __name__ == "__main__":
     TutorialApp().run()

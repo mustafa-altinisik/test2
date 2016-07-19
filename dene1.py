@@ -1,5 +1,8 @@
 # -*- coding: utf-8 -*-
+
 from Tkinter import *
+
+
 pencere = Tk()
 etiket = Label(text = "Deneme yazısı.\nHello World!", fg="green")
 etiket.pack()
