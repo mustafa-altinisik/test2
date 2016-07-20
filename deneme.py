@@ -15,7 +15,7 @@ class TutorialApp(App):
         t = TextInput(font_size=10)
         f = FloatLayout()
         s = Scatter()
-        l = Label(text = u"Merhaba\nEfendümüğşşöşçöı",
+        l = Label(text = u"Merhaba\nEfendim",
                   font_size=50)
         f.add_widget(s)
         s.add_widget(l)
